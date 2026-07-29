@@ -1,0 +1,12 @@
+interface:
+  display_name: "RigorLoop Research Bounties"
+  short_description: "Commission verified human research review"
+  default_prompt: "Use $rigorloop-research-bounties to commission a verified human expert to review this research claim."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "com.rigorloop/research-bounties"
+      description: "RigorLoop remote MCP server"
+      transport: "streamable_http"
+      url: "https://rigorloop.com/mcp"
